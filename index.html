@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Didier JO">
+    <meta keywords="html, etiquetas, documentos, formularios" lang="En, Es" content="etiquetasde html, página web">
+    <meta name="description" lang="es, en" content="lista de etiquetas de HTML">
+    <title>Estructura general</title>
+</head>
+<header>
+    <h1 align="center">Bienvenidos a nuestra página</h1>
+    <h3>Estructura general del proyecto</h3>
+    <a href="#Inicio"><img src="img/Pepsi-Logo-1969.png" width="150" height="110" alt="logotipo" align="Right"></a>
+    <!--este es un logo con la culidad de devolver a la página de inicio-->
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Acerca">Acerca de</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Formulario">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<!--Seccion principal del contenido-->
+<main>
+    <section id="Inicio"><!-- este id es para la ancla o hipervinculo-->
+        <h2>Inicio</h2>
+        <p>en esta seccion esta el inicio o página principal</p>
+        <img src="img/images.jfif" width="200" height="75"><br>
+        <a href="#Servicio">Volver al inicio</a>
+    </section>
+    <section id="Acerca"><!-- este id es para la ancla o hipervinculo-->
+        <h2>Acerca de</h2>
+        <p>en esta seccion puedes leer acerca de mis trabajos y proyectos</p>
+        <img src="img/images (1).jfif" width="400" height="200"><br>
+        <a href="#Inicio">Volver al inicio</a>
+    </section>
+    
+    <section id="Servicios"><!-- este id es para la ancla o hipervinculo-->
+        <h2>Servicios</h2>
+        <p>en esta seccion puedes encontrar todos los servicios que ofrezco</p>
+        <img src="img/images.jfif" width="400" height="200"><br>
+        <a href="#Inicio">Volver al inicio</a>
+    </section>
+    <section id="Contacto"><!-- este id es para la ancla o hipervinculo-->
+
+        <h2>Contacto</h2>
+        <p>en esta seccion puedes encontrar todos mis contactos profesionales los cuales serán atendidas durante horario laboral</p>
+        <img src="img/images (1).jfif" width="400" height="200"><br>
+        <a href="#Inicio">Volver al inicio</a><div class="Contenedor">
+<section id="Formulario">
+         <h2>Formulario de contacto</h2>
+            <form action="/enviar formulario" method="post">
+            <!--Nombre-->
+                <div class="Formulario">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingrese su nombre"></div><!--el required lo convierte en algo obligatorio, el minlength es la cantidad minima de caracteres-->
+                <!--Gmail-->
+             <div class="Formulario">
+                <label for="Gmail"></label>
+                <input type="email" id="email" name="email" required minlength="8" maxlength="50"
+                 placeholder="correoejemplo@gmail">
+            </div>
+                    <!--Telefono-->
+          <div class="Formulario"><!--el required pattern es un patron -->
+             <label for="Telefono"></label>
+             <input type="" id="tel" name="Telefono" required pattern="[o-9](3)[4[0-9]]"
+             placeholder="506 0000-0000">
+         </div>
+         <!--Mensajes-->
+         <div class="Formulario">
+            <label for="Asunto"></label>
+            <input text="Asunto" id="Asunto" name="Asunto" required minlength="5" maxlength="100"
+             placeholder="Motivo de su mensaje">
+         </div>
+         <div class="mensaje">
+            <label for="mensaje"></label>
+            <textarea id="mensaje" required minlength="10" maxlength="400" placeholder="mensaje"></textarea>
+            
+         </div>  <input type="submit" value="enviar"><br><br>
+         <a href="#Inicio" align="Right">Volver al inicio</a>
+        </form>
+    </section>
+    </div><br><br>
+    <video width="500" height="400" controls src="https://www.youtube.com/watch?v=4lKQVhJPIK0"></video>
+    <audio controls src="media/">
+
+    </audio>
+</section>
+</main>
+ <aside>
+    <h3>
+        Noticias recientes
+    </h3>
+    <p>
+        ultimas actualizaciones de mis ultimos servicios
+    </p>
+    <img src="img/images.jfif" width="300" height="200" alt="Imagen informativa">
+ </aside><br>
+ <footer id="Pie de pagina" color="#000000">
+    <p>&copy;<font color="white">2024 mi pagina web todos los derechos reservados</font></p>
+    <a href="#Inicio" ><img src="img/Pepsi-Logo-1969.png" alt="logo" width="100" height="50"align="Right"></a>
+</footer>
+</body>
+
+</html>
